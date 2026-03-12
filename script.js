@@ -67,6 +67,17 @@ function portalLogin(){
   alert('Demo mode — In the live website, this will log you into your portal.')
 }
 
+// Photo Zoom
+function openZoom(src){
+  const modal = document.getElementById('zoomModal');
+  const img = document.getElementById('zoomImg');
+  img.src = src;
+  modal.classList.add('open');
+}
+function closeZoom(){
+  document.getElementById('zoomModal').classList.remove('open');
+}
+
 // Close modals on overlay click
 document.querySelectorAll('.modal-overlay').forEach(el=>{
   el.addEventListener('click',e=>{if(e.target===el){el.classList.remove('open')}})
