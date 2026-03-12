@@ -8,10 +8,10 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<nav id="navbar" class="scrolled">
+<nav id="navbar">
   <div class="nav-inner">
     <a href="index.html" class="nav-logo">
-      <div class="nav-logo-icon">🎓</div>
+      <div class="nav-logo-icon">&#127891;</div>
       <div class="nav-logo-text">Kala Tutorial<span>Excellence in Education</span></div>
     </a>
     <div class="nav-links">
@@ -22,10 +22,23 @@
       <a href="facilities.html">Facilities</a>
       <a href="news.html">Photo Gallery</a>
       <a href="contact.html">Contact</a>
-      <!-- <a href="admission.html" class="nav-cta">Enroll Now</a> -->
+    </div>
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
     </div>
   </div>
 </nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="courses.html" onclick="toggleMenu()">Courses</a>
+  <a href="teachers.html" onclick="toggleMenu()">Teachers</a>
+  <a href="results.html" onclick="toggleMenu()">Results</a>
+  <a href="facilities.html" onclick="toggleMenu()">Facilities</a>
+  <a href="facilities.html#schedule" onclick="toggleMenu()">Schedule</a>
+  <a href="facilities.html#fees" onclick="toggleMenu()">Fees</a>
+  <a href="news.html" onclick="toggleMenu()">Photo Gallery</a>
+  <a href="contact.html" onclick="toggleMenu()">Contact</a>
+  <a href="admission.html" onclick="toggleMenu()">Enroll Now</a>
+</div>
 
 <section id="courses" style="padding-top:120px">
   <div class="section-inner">
